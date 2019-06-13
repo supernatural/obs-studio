@@ -50,7 +50,9 @@ set(obs-filters_SOURCES
 	mask-filter.c
 	invert-audio-polarity.c
 	compressor-filter.c
-	limiter-filter.c)
+	limiter-filter.c
+	expander-filter.c
+	luma-key-filter.c)
 
 add_library(obs-filters MODULE
 	${obs-filters_SOURCES}

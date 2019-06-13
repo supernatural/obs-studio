@@ -38,6 +38,10 @@
                     "url": "rtmp://live-ber.twitch.tv/app"
                 },
                 {
+                    "name": "Europe: Copenhagen, DK",
+                    "url": "rtmp://live-cph.twitch.tv/app"
+                },
+                {
                     "name": "EU: Frankfurt, DE",
                     "url": "rtmp://live-fra.twitch.tv/app"
                 },
@@ -221,16 +225,8 @@
                     "url": "rtmp://live.ams.hitbox.tv/push"
                 },
                 {
-                    "name": "EU-West: Frankfurt, Germany",
-                    "url": "rtmp://live.fra.hitbox.tv/push"
-                },
-                {
                     "name": "EU-West: Paris, France",
                     "url": "rtmp://live.cdg.hitbox.tv/push"
-                },
-                {
-                    "name": "EU-West: London, United Kingdom",
-                    "url": "rtmp://live.lhr.hitbox.tv/push"
                 },
                 {
                     "name": "EU-South: Milan, Italia",
@@ -241,16 +237,8 @@
                     "url": "rtmp://live.dme.hitbox.tv/push"
                 },
                 {
-                    "name": "US-East: New York - 1",
+                    "name": "US-East: New York",
                     "url": "rtmp://live.jfk.hitbox.tv/push"
-                },
-                {
-                    "name": "US-East: New York - 2",
-                    "url": "rtmp://live.nyc.hitbox.tv/push"
-                },
-                {
-                    "name": "US-Central: Denver",
-                    "url": "rtmp://live.den.hitbox.tv/push"
                 },
                 {
                     "name": "US-West: San Francisco",
@@ -265,16 +253,8 @@
                     "url": "rtmp://live.gru.hitbox.tv/push"
                 },
                 {
-                    "name": "South Korea: Seoul",
-                    "url": "rtmp://live.icn.hitbox.tv/push"
-                },
-                {
                     "name": "Asia: Singapore",
                     "url": "rtmp://live.sin.hitbox.tv/push"
-                },
-                {
-                    "name": "China: Hong Kong",
-                    "url": "rtmp://live.hkg.hitbox.tv/push"
                 },
                 {
                     "name": "Oceania: Sydney, Australia",
@@ -370,7 +350,7 @@
                 }
             ],
             "recommended": {
-                "keyint": 3,
+                "keyint": 2,
                 "output": "ftl_output",
                 "max audio bitrate": 160,
                 "max video bitrate": 10000,
@@ -460,7 +440,7 @@
                 }
             ],
             "recommended": {
-                "keyint": 3,
+                "keyint": 2,
                 "max audio bitrate": 160,
                 "max video bitrate": 10000,
                 "profile": "main"
@@ -478,6 +458,21 @@
                 "keyint": 2,
                 "profile": "main",
                 "max video bitrate": 6000,
+                "max audio bitrate": 160
+            }
+        },
+        {
+            "name": "GamePlank",
+            "servers": [
+                {
+                    "name": "Primary",
+                    "url": "rtmp://live.gameplank.tv/go"
+                }
+            ],
+            "recommended": {
+                "keyint": 1,
+                "profile": "main",
+                "max video bitrate": 2500,
                 "max audio bitrate": 160
             }
         },
@@ -693,6 +688,10 @@
                     "url": "rtmp://tokyo.restream.io/live"
                 },
                 {
+                    "name": "India (Bangalore)",
+                    "url": "rtmp://india.restream.io/live"
+                },
+                {
                     "name": "Australia (Sydney)",
                     "url": "rtmp://au.restream.io/live"
                 }
@@ -796,6 +795,15 @@
             }
         },
         {
+          "name": "GameTips.TV",
+          "servers": [
+              {
+                  "name": "Server Iran",
+                  "url": "rtmp://rtmp.cdn.server1.gametips.tv:1935/hls"
+              }
+          ]
+        },
+        {
             "name": "Nood",
             "servers": [
                 {
@@ -882,6 +890,10 @@
                     "url": "rtmp://la.castr.io"
                 },
                 {
+                    "name": "New York US",
+                    "url": "rtmp://ny.castr.io"
+                },
+                {
                     "name": "Montreal CA",
                     "url": "rtmp://qc.castr.io"
                 },
@@ -894,6 +906,10 @@
                     "url": "rtmp://de.castr.io"
                 },
                 {
+                    "name": "Frankfurt DE 2",
+                    "url": "rtmp://fr.castr.io"
+                },
+                {
                     "name": "Moscow RU",
                     "url": "rtmp://ru.castr.io"
                 },
@@ -904,6 +920,34 @@
                 {
                     "name": "Sydney AU",
                     "url": "rtmp://au.castr.io"
+                },
+                {
+                    "name": "Brazil",
+                    "url": "rtmp://br.castr.io"
+                },
+                {
+                    "name": "US Central",
+                    "url": "rtmp://us-central.castr.io"
+                },
+                {
+                    "name": "US West",
+                    "url": "rtmp://us-west.castr.io"
+                },
+                {
+                    "name": "US East",
+                    "url": "rtmp://us-east.castr.io"
+                },
+                {
+                    "name": "US South",
+                    "url": "rtmp://us-south.castr.io"
+                },
+                {
+                    "name": "South America",
+                    "url": "rtmp://south-am.castr.io"
+                },
+                {
+                    "name": "EU Central",
+                    "url": "rtmp://eu-central.castr.io"
                 }
             ],
             "recommended": {
@@ -1112,24 +1156,6 @@
                 "max video bitrate": 50000,
                 "max audio bitrate": 192
             }
-        },
-        {
-            "name": "LiveEdu.tv",
-            "common": true,
-            "servers": [
-                {
-                    "name": "US",
-                    "url": "rtmp://usmedia11.liveedu.tv/livecodingtv"
-                },
-                {
-                    "name": "EU",
-                    "url": "rtmp://eumedia8.liveedu.tv/livecodingtv"
-                },
-                {
-                    "name": "Asia",
-                    "url": "rtmp://apmedia1.liveedu.tv/livecodingtv"
-                }
-            ]
         },
         {
             "name": "Twitter / Periscope",
@@ -1365,6 +1391,21 @@
             }
         },
         {
+            "name": "STAGE TEN",
+            "servers": [
+                {
+                    "name": "STAGE TEN",
+                    "url": "rtmps://app-rtmp.stageten.tv:443/stageten"
+                }
+            ],
+            "recommended": {
+                "keyint": 2,
+                "profile": "baseline",
+                "max video bitrate": 4000,
+                "max audio bitrate": 128
+            }
+        },
+        {
             "name": "DLive",
             "servers": [
                 {
@@ -1428,6 +1469,41 @@
                 "keyint": 2,
                 "max video bitrate": 6000,
                 "max audio bitrate": 192
+            }
+        },
+        {
+            "name": "Camplace",
+            "servers": [
+                {
+                    "name": "Camplace - Default",
+                    "url": "rtmp://rtmp.camplace.com"
+                }
+            ],
+            "recommend": {
+                "keyint": 2,
+                "max video bitrate": 3000,
+                "max audio bitrate": 128
+            }
+        },
+        {
+            "name": "OnlyFans.com",
+            "servers": [
+                {
+                    "name": "USA",
+                    "url": "rtmp://route0.onlyfans.com/live"
+                },
+                {
+                    "name": "Europe",
+                    "url": "rtmp://route0-dc2.onlyfans.com/live"
+                }
+            ],
+            "recommend": {
+                "keyint": 2,
+                "profile": "main",
+                "max video bitrate": 2500,
+                "max audio bitrate": 192,
+                "bframes": 0,
+                "x264opts": "tune=zerolatency"
             }
         }
     ]
