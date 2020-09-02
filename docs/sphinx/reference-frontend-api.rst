@@ -124,6 +124,18 @@ Structures/Enumerations
      the program is either about to load a new scene collection, or the
      program is about to exit.
 
+   - **OBS_FRONTEND_FINISHED_LOADING**
+
+     Triggered when the program has finished loading.
+
+   - **OBS_FRONTEND_EVENT_RECORDING_PAUSED**
+
+     Triggered when the recording has been paused.
+
+   - **OBS_FRONTEND_EVENT_RECORDING_UNPAUSED**
+
+     Triggered when the recording has been unpaused.
+
 .. type:: struct obs_frontend_source_list
 
    - DARRAY(obs_source_t*) **sources**
@@ -402,6 +414,18 @@ Functions
 
 ---------------------------------------
 
+.. function:: void obs_frontend_recording_pause(bool pause)
+
+   :pause: *true* to pause recording, *false* to unpause.
+
+---------------------------------------
+
+.. function:: bool obs_frontend_recording_paused(void)
+
+   :return: *true* if recording paused, *false* otherwise.
+
+---------------------------------------
+
 .. function:: void obs_frontend_replay_buffer_start(void)
 
    Starts replay buffer.
@@ -505,3 +529,17 @@ Functions
    active scene if not in studio mode.
 
    :param scene: The scene to set as the current preview.
+
+---------------------------------------
+
+.. function:: void *obs_frontend_take_screenshot(void)
+
+   Takes a screenshot of the main OBS output.
+
+---------------------------------------
+
+.. function:: void *obs_frontend_take_source_screenshot(obs_source_t *source)
+
+   Takes a screenshot of the specified source.
+
+   :param source: The source to take screenshot of.
